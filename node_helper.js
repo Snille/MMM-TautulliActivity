@@ -11,7 +11,7 @@ module.exports = NodeHelper.create({
 	reloadTimer: null,
 
 	getData: function() {
-		console.info('MMM-TautulliActivity: fetching data');
+		//console.info('MMM-TautulliActivity: fetching data');
 		fetch(`${this.config.host}/api/v2?apikey=${this.config.apiKey}&cmd=get_activity`)
 			.then((res) => {
 				if (res.ok) {
